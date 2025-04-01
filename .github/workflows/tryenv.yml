@@ -19,7 +19,7 @@ jobs:
         run:  |
           echo "Deploying to onebox"
           sleep 3
-          echo "Deployed successfully"
+          echo "Deployed successfully to onebox"
  staging:
      runs-on: ubuntu-latest
      needs: onebox
@@ -28,7 +28,7 @@ jobs:
          run:  |
            echo "Deplyoing to staging"
            sleep 3
-           echo" Deployed successfully"
+           echo "Deployed successfully to staging"
  production:
      runs-on: ubuntu-latest
      needs: staging
@@ -37,5 +37,5 @@ jobs:
          run:  |
            echo "Deploying to production"
            sleep 3
-           echo "Deployed successfully"
+           echo "Deployed successfully to production"
   
