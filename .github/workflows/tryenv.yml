@@ -28,7 +28,7 @@ jobs:
          run:  |
            echo "Deplyoing to staging"
            sleep 3
-           echo "Deployed successfully to staging"
+           echo "Deployed successfully to staging..."
  production:
      runs-on: ubuntu-latest
      needs: staging
